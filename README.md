@@ -590,6 +590,113 @@ new_train[['Pclass_Kfold_Target_Enc','Pclass']]
 
 ```
 
+**>>> Polynomials**
+
+```python
+
+def Polynomials(df):
+    x1 = df['Feature_1'].fillna(-1) + 1e-1
+    x2 = df['Feature_2'].fillna(-1) + 1e-1
+    x3 = df['Feature_3'].fillna(-1) + 1e-1
+    
+    df['Feature_1/Feature_2'] = x1/x2
+    df['Feature_2/Feature_1'] = x2/x1
+    df['Feature_1/Feature_3'] = x1/x3
+    df['Feature_3/Feature_1'] = x3/x1
+    df['Feature_2/Feature_3'] = x2/x3
+    df['Feature_3/Feature_2'] = x3/x2
+    
+    return df
+    
+```
+
+**>>> Genetic Programming**
+
+```python
+
+import gplearn 
+function_set = ['add', 'sub', 'mul', 'div',
+                'sqrt', 'log', 'abs', 'neg', 'inv','tan']
+
+gp = SymbolicTransformer(generations=800, population_size=200,
+                         hall_of_fame=100, n_components=10,
+                         function_set=function_set,
+                         parsimony_coefficient=0.0005,
+                         max_samples=0.9, verbose=1,
+                         random_state=0, n_jobs=6)
+
+gp.fit(train_df.drop("TARGET", axis=1), train_df["TARGET"])
+gp_features.to_csv("gp_features.csv",index=False)
+
+```
+
+**>>> Shap Engineering**
+
+```python
+
+import shap
+## Model should be LightGBM or XGBoost
+shap_values = shap.TreeExplainer(model).shap_values(X_train)
+
+shap_fram = pd.DataFrame(shap_values[:,:-1], columns=list(X_train.columns))
+
+shap_new = shap_fram.sum().sort_values().to_frame()
+
+shap_new.columns = ["SHAP"]
+
+low = shap_new[shap_new["SHAP"]<shap_new.quantile(.20).values[0]].reset_index()
+
+high = shap_new[shap_new["SHAP"]>shap_new.quantile(.80).values[0]].reset_index()
+
+## Copy and pasted the output to these eliments 
+low = ['i7', 'i8', 'i9', 'i10', 'i11']
+
+high = ['i3', 'i15', 'i12', 'i35', 'EXT_SOURCE_3']
+
+
+for h, l in zip(high, low):
+    playdata[h+"_"+l] = playdata[l]/playdata[h] ### You can create other interactions.
+    playdata[h+"_"+l] = playdata[h+"_"+l].replace([np.inf, -np.inf], np.nan)
+    playdata[h+"_"+l] = playdata[h+"_"+l].fillna(value=0)
+    
+```
+
+**>>> PCA Features**
+
+```python
+
+import seaborn as sns
+from sklearn.decomposition import PCA
+pca2 = PCA(n_components=2)
+pca2_results = pca2.fit_transform(df_2.drop(["TARGET"], axis=1))
+
+for i in range(pca2_results.shape[1]):
+    df_2["pca_"+str(i)] = pca2_results[:,i]
+    
+```
+
+**>>> Date Features**
+
+```python
+
+# Additional Date Features
+df_edit = df_gvkey
+df_edit["public_date"] = pd.to_datetime(df_edit["public_date"])
+df_edit["public_date_month"] = df_edit["public_date"].dt.month.astype(int)
+df_edit["public_date_year"]  = df_edit["public_date"].dt.year.astype(int)
+df_edit["public_date_week"]  = df_edit["public_date"].dt.week.astype(int)
+df_edit["public_date_day"]   = df_edit["public_date"].dt.day.astype(int)
+df_edit["public_date_dayofweek"]= df_edit["public_date"].dt.dayofweek.astype(int)
+df_edit["public_date_dayofyear"]= df_edit["public_date"].dt.dayofyear.astype(int)
+df_edit["public_date_hour"] = df_edit["public_date"].dt.hour.astype(int)
+df_edit["public_date_int"] = pd.to_datetime(df_edit["public_date"]).astype(int)
+
+```
+
+
+
+
+
 
 
 
