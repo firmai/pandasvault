@@ -1,4 +1,8 @@
 # Advanced Pandas Vault
+#### Pandas functions, snippets, and recipes. 
+
+The only Pandas utility package you would ever need. 
+
 Pandas functions, snippets, and recipes. 
 
 Code is divided into **table processing** and **table exploration**. 
