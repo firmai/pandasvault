@@ -87,7 +87,7 @@ for v,i,j in s_corr_list:
     print ("%s and %s = %.2f" % (cols[i],cols[j],v))
 ```
 
-**>>> Highgly Correlated Pairs**
+**>>> Highly Correlated Pairs**
 
 ```python
 
@@ -282,7 +282,7 @@ print('Upper bound:',para[0],'\nLower bound:',para[1])
 
 ```
 
-**>>> Outlier Detection Mean Standard Deviation
+**>>> Outlier Detection Mean Standard Deviation**
 
 ```python
 def outlier_detect_mean_std(data,col,threshold=3):
@@ -420,7 +420,7 @@ data4 = ot.drop_outlier(data=data,outlier_index=index)
 
 ```
 
-**Impute Outlier with Average**
+**>>> Impute Outlier with Average**
 
 ```python
 
