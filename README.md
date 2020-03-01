@@ -3,6 +3,8 @@ Pandas functions, snippets, and recipes.
 
 Code is divided into **table processing** and **table exploration**. 
 
+### Table Processing
+
 ----------
 
 **Memory Reduction Script**
@@ -61,5 +63,87 @@ nums = [i**2 if i == 10 else i-5 if i < 7 else i+5 for i in list_num]
 print(nums)
 ```
 
+### Table Exploration
 
+**Tabled Strong Correlations**
+
+```python
+data_corr = data.corr()
+# Set the threshold to select only highly correlated attributes
+threshold = 0.5
+# List of pairs along with correlation above threshold
+corr_list = []
+#Search for the highly correlated pairs
+for i in range(0,size): #for 'size' features
+    for j in range(i+1,size): #avoid repetition
+        if (data_corr.iloc[i,j] >= threshold and data_corr.iloc[i,j] < 1) or (data_corr.iloc[i,j] < 0 and data_corr.iloc[i,j] <= -threshold):
+            corr_list.append([data_corr.iloc[i,j],i,j]) #store correlation and columns index
+#Sort to show higher ones first            
+s_corr_list = sorted(corr_list,key=lambda x: -abs(x[0]))
+#Print correlations and column names
+for v,i,j in s_corr_list:
+    print ("%s and %s = %.2f" % (cols[i],cols[j],v))
+```
+
+**Highgly Correlated Pairs**
+
+```python
+
+#Search for the highly correlated pairs
+for i in range(0,size): #for 'size' features
+    for j in range(i+1,size): #avoid repetition
+        if (data_corr.iloc[i,j] >= threshold and data_corr.iloc[i,j] < 1) or (data_corr.iloc[i,j] < 0 and data_corr.iloc[i,j] <= -threshold):
+            corr_list.append([data_corr.iloc[i,j],i,j]) #store correlation and columns index
+
+#Sort to show higher ones first            
+s_corr_list = sorted(corr_list,key=lambda x: -abs(x[0]))
+
+```
+
+
+**Correlation with Target**
+
+```python
+
+# Correlation amongst top feautres and target
+corr = df.corr()
+abb = corr["target"].sort_values(ascending=False)[::5].index.values.tolist()
+corr = corr[corr.index.isin(abb)]
+corr = corr[abb]
+corr.ix[:,0].abs().sort_values(ascending=False)
+corr.shape
+
+```
+
+
+**Missing Data**
+
+```python
+
+def missing_data(data):
+    total = data.isnull().sum().sort_values(ascending = False)
+    percent = (data.isnull().sum()/data.isnull().count()*100).sort_values(ascending = False)
+    return pd.concat([total, percent], axis=1, keys=['Total', 'Percent'])
+    
+```
+
+
+**Shift Columns to Front**
+
+```python
+
+### Bring certain columns to the front:
+def ListShuff(items, df):
+    cols = list(df)
+    for i in range(len(items)):
+        cols.insert(i, cols.pop(cols.index(items[i])))
+    df = df.ix[:, cols]
+    df.reset_index(drop=True, inplace=True)
+    return df
+```
+
+
+
+
+    
 
