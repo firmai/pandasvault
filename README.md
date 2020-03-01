@@ -7,7 +7,7 @@ Code is divided into **table processing** and **table exploration**.
 
 ----------
 
-**Memory Reduction Script**
+**>>> Memory Reduction Script**
 
 ```python
 
@@ -55,7 +55,7 @@ X_test = reduce_mem_usage(X_test)
 
 ```
 
-**Nested Conditional**
+**>>> Nested Conditional**
 ```python
 
 list_num = [5,10,15]
@@ -67,7 +67,7 @@ print(nums)
 
 ----------
 
-**Tabled Strong Correlations**
+**>>> Tabled Strong Correlations**
 
 ```python
 data_corr = data.corr()
@@ -87,7 +87,7 @@ for v,i,j in s_corr_list:
     print ("%s and %s = %.2f" % (cols[i],cols[j],v))
 ```
 
-**Highgly Correlated Pairs**
+**>>> Highgly Correlated Pairs**
 
 ```python
 
@@ -103,7 +103,7 @@ s_corr_list = sorted(corr_list,key=lambda x: -abs(x[0]))
 ```
 
 
-**Correlation with Target**
+**>>> Correlation with Target**
 
 ```python
 
@@ -118,7 +118,7 @@ corr.shape
 ```
 
 
-**Missing Data**
+**>>> Missing Data**
 
 ```python
 
@@ -130,7 +130,7 @@ def missing_data(data):
 ```
 
 
-**Shift Columns to Front**
+**>>> Shift Columns to Front**
 
 ```python
 
@@ -148,7 +148,7 @@ def ListShuff(items, df):
 
 ----------
 
-**Drop Mostly Empty Columns**
+**>>> Drop Mostly Empty Columns**
 
 ```python
 ### Only where prediction is the main priority 
@@ -160,13 +160,13 @@ df = df.dropna(thresh=df.shape[0]*0.05,how='all',axis=1, inplace=True) ### Secon
 
 ````
 
-**Drop Constant Column**
+**>>> Drop Constant Column**
 
 ```python 
 df = df.loc[:,df.apply(pd.Series.nunique) != 1] 
 ```
 
-**Drop Quasi-Constant Features**
+**>>> Drop Quasi-Constant Features**
 
 ```python
 
@@ -201,7 +201,7 @@ quasi_constant_feature = ft.constant_feature_detect(data=X_train,threshold=0.9)
 
 ```
 
-**Distribution Tail Imputation**
+**>>> Distribution Tail Imputation**
 
 ```python
 
@@ -227,7 +227,7 @@ data6 = impute_NA_with_end_of_distribution(data=data,NA_col=['Age'])
 ```
 
 
-**Outlier Identification Strategies**
+**>>> Outlier Identification Strategies**
 
 ```python
 
@@ -251,7 +251,7 @@ print('Upper bound:',para[0],'\nLower bound:',para[1])
 ```
 
 
-**Outlier Detection IQR**
+**>>> Outlier Detection IQR**
 
 ```python
 
@@ -282,7 +282,7 @@ print('Upper bound:',para[0],'\nLower bound:',para[1])
 
 ```
 
-**Outlier Detection Mean Standard Deviation
+**>>> Outlier Detection Mean Standard Deviation
 
 ```python
 def outlier_detect_mean_std(data,col,threshold=3):
@@ -312,7 +312,7 @@ index = outlier_detect_MAD(data=data,col='Fare',threshold=3.5)
 
 ```
 
-**Outlier Detection MAD**
+**>>> Outlier Detection MAD**
 
 ```python
 
@@ -343,9 +343,9 @@ def outlier_detect_MAD(data,col,threshold=3.5):
 index = ot.outlier_detect_MAD(data=data,col='Fare',threshold=3.5)
 ```
 
-**Outlier Imputation Strategies**
+**>>> Outlier Imputation Strategies**
 
-``python
+```python
 def impute_outlier_with_arbitrary(data,outlier_index,value,col=[]):
     """
     impute outliers with arbitrary value
@@ -370,7 +370,7 @@ print(data2[255:275])
 
 ```
 
-**Winzorization**
+**>>> Winzorization**
 
 ```python
 
@@ -403,7 +403,7 @@ data3[255:275]
 
 ```
 
-**Drop Outliers**
+**>>> Drop Outliers**
 
 ```python
 
@@ -420,7 +420,7 @@ data4 = ot.drop_outlier(data=data,outlier_index=index)
 
 ```
 
-Impute Outlier with Average
+**Impute Outlier with Average**
 
 ```python
 
@@ -446,14 +446,12 @@ data5 = ot.impute_outlier_with_avg(data=data,col='Fare',
 
 
 
-
-
 ### Feature Engineering
 
 ----------
 
 
-**Normalisation**
+**>>> Normalisation**
 
 ```python
 # Normalising a dataframe Normalise
@@ -467,7 +465,7 @@ data5 = ot.impute_outlier_with_avg(data=data,col='Fare',
 # Standardising dataframe
 ```
 
-**Standardisation**
+**>>> Standardisation**
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -482,7 +480,7 @@ def Standardisation(df):
 ```
 
 
-**Scaler**
+**>>> Scaler**
 
 ```python
 
@@ -510,7 +508,7 @@ def scaler(df,scaler=None,train=True, target=None):
     
 ```
 
-**Automate Dummy (one-hot) Encoding**
+**>>> Automate Dummy (one-hot) Encoding**
 
 ```python
 # Creating dummies for small object uniques
@@ -523,7 +521,7 @@ df_edit = pd.get_dummies(df, columns = list_dummies) # Saves original dataframe
 df_edit = pd.concat([df[["year","qtr"]],df_edit],axis=1)
 ```
 
-**Binarise Empty Columns**
+**>>> Binarise Empty Columns**
 
 ```python
 # Binarise slightly empty columns
@@ -540,7 +538,7 @@ for col in df.columns:
 df = pd.get_dummies(df, columns = this) 
 ```
 
-**Target Encoding**
+**>>> Target Encoding**
 
 ```python
 
