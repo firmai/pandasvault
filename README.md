@@ -52,3 +52,14 @@ X_train = reduce_mem_usage(X_train)
 X_test = reduce_mem_usage(X_test)
 
 ```
+
+**Nested Conditional**
+```python
+
+list_num = [5,10,15]
+nums = [i**2 if i == 10 else i-5 if i < 7 else i+5 for i in list_num]
+print(nums)
+```
+
+
+
