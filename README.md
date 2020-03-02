@@ -1,6 +1,11 @@
 
 # Pandas Vault
 
+- [Data Processing](#dataprocessing)
+    - [Memory Reduction Script](#memoryreduction)
+    - [Missing Data Report](#missingdata)
+    - [Shift Columns to Front](#shiftcolumns)
+
 **>>>Create Test Dataframe**
 
 
@@ -12,6 +17,7 @@ df = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd']) \
     .assign(target=lambda x: (x['b']+x['a']/x['d'])*x['c'])
 
 ```
+
 
 
 ```python
@@ -59,9 +65,11 @@ df
 &nbsp;
 &nbsp;
 
+<a name="dataprocessing"></a>
 ### **Data Processing**
 -----------------
 
+<a name="memoryreduction"></a>
 **>>> Memory Reduction Script**
 
 
@@ -209,7 +217,7 @@ df_out
 &nbsp;
 &nbsp;
 
-
+<a name="missingdata"></a>
 **>>> Missing Data Report**
 
 
@@ -310,6 +318,7 @@ df_out = missing_data(df_in); df_out
 &nbsp;
 &nbsp;
 
+<a name="shiftcolumns"></a>
 
 **>>> Shift Columns to Front**
 
