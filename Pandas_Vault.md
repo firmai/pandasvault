@@ -207,6 +207,9 @@ df_out
 </table>
 
 
+&nbsp;
+&nbsp;
+
 
 **>>> Missing Data Report**
 
@@ -303,6 +306,10 @@ df_out = missing_data(df_in); df_out
     </tr>
   </tbody>
 </table>
+
+
+&nbsp;
+&nbsp;
 
 
 **>>> Shift Columns to Front**
