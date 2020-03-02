@@ -1,7 +1,7 @@
 
 # Pandas Vault
 
->>>Create Test Dataframe
+**>>>Create Test Dataframe**
 
 
 ```
@@ -67,24 +67,7 @@ df
 df_in = df.copy(); df_in
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -122,9 +105,6 @@ df_in = df.copy(); df_in
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```
@@ -184,22 +164,7 @@ df_out
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -237,11 +202,10 @@ df_out
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
->>> Missing Data Report
+**>>> Missing Data Report**
 
 
 ```
@@ -250,23 +214,7 @@ df_in[df_in>df_in.mean()] = None ; df_in
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -304,9 +252,6 @@ df_in[df_in>df_in.mean()] = None ; df_in
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```
@@ -319,24 +264,7 @@ def missing_data(data):
 df_out = missing_data(df_in); df_out
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -372,11 +300,9 @@ df_out = missing_data(df_in); df_out
     </tr>
   </tbody>
 </table>
-</div>
 
 
-
->>> Shift Columns to Front
+**>>> Shift Columns to Front**
 
 
 ```
@@ -384,23 +310,7 @@ df_in = df.copy(); df_in
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -438,9 +348,6 @@ df_in = df.copy(); df_in
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```
@@ -456,24 +363,7 @@ def ListShuff(items, df):
 df_out = ListShuff(["target","c","d"],df_in); df_out
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -511,6 +401,5 @@ df_out = ListShuff(["target","c","d"],df_in); df_out
     </tr>
   </tbody>
 </table>
-</div>
 
 
