@@ -64,9 +64,8 @@ df
 
 **>>> Memory Reduction Script**
 
-
+-- Input:
 ```
-# Input
 df_in = df.copy(); df_in
 ```
 
@@ -110,6 +109,7 @@ df_in = df.copy(); df_in
 </table>
 
 
+-- Function:
 ```
 # Code
 import gc
@@ -156,10 +156,9 @@ df_out = reduce_mem_usage(df_in)
 
     Memory usage of dataframe is 0.00 MB
     Memory usage after optimization is: 0.00 MB
-    Decreased by 0.0%
+    Decreased by 30.0%
 
-
-
+-- Output:
 ```
 # output
 df_out
