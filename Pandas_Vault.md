@@ -1,7 +1,7 @@
 
 # Pandas Vault
 
->>> Create Test Dataframe
+>>>Create Test Dataframe
 
 
 ```
@@ -20,7 +20,7 @@ df
 
 
 
-
+{% raw %}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -74,7 +74,7 @@ df
   </tbody>
 </table>
 </div>
-
+{% endraw %}
 
 
 ### **Data Processing**
