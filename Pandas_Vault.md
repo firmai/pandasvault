@@ -4,7 +4,7 @@
 **>>>Create Test Dataframe**
 
 
-```
+```python
 import pandas as pd
 import numpy as np
 """quick way to create a data frame for testing""" 
@@ -14,7 +14,7 @@ df = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd']) \
 ```
 
 
-```
+```python
 df
 ```
 <table class="dataframe">
@@ -64,8 +64,8 @@ df
 
 **>>> Memory Reduction Script**
 
--- Input:
-```
+
+```python
 df_in = df.copy(); df_in
 ```
 
@@ -109,8 +109,8 @@ df_in = df.copy(); df_in
 </table>
 
 
--- Function:
-```
+
+```python
 # Code
 import gc
 
@@ -158,8 +158,8 @@ df_out = reduce_mem_usage(df_in)
     Memory usage after optimization is: 0.00 MB
     Decreased by 30.0%
 
--- Output:
-```
+
+```python
 # output
 df_out
 ```
@@ -213,7 +213,7 @@ df_out
 **>>> Missing Data Report**
 
 
-```
+```python
 df_in = df.copy()
 df_in[df_in>df_in.mean()] = None ; df_in
 ```
@@ -259,7 +259,7 @@ df_in[df_in>df_in.mean()] = None ; df_in
 </table>
 
 
-```
+```python
 def missing_data(data):
     "Create a dataframe with a percentage and count of missing values"
     total = data.isnull().sum().sort_values(ascending = False)
@@ -314,7 +314,7 @@ df_out = missing_data(df_in); df_out
 **>>> Shift Columns to Front**
 
 
-```
+```python
 df_in = df.copy(); df_in
 ```
 
@@ -359,7 +359,7 @@ df_in = df.copy(); df_in
 </table>
 
 
-```
+```python
 def ListShuff(items, df):
     "Bring a list of columns to the front"
     cols = list(df)
