@@ -18,8 +18,6 @@ df = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd']) \
 df
 ```
 
-
-<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -56,7 +54,6 @@ df
       <td>-0.393262</td>
     </tr>
   </tbody>
-</table>
 
 
 
