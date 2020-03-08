@@ -1,6 +1,8 @@
 
 # Pandas Vault
 
+The only Pandas utility package you would ever need. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been inlcuded in this package. 
+
 - [Data Processing](#dataprocessing)
     - [Memory Reduction Script](#memoryreduction)
     - [Missing Data Report](#missingdata)
