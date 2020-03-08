@@ -1,7 +1,7 @@
 
 # Pandas Vault
 
-The only Pandas utility package you would ever need. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been inlcuded in this package. For some of the code we have produced packaged functions, look for (func). 
+The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been inlcuded in this package. For some of the code we have produced packaged functions, look for (func). 
 
 - [Data Processing](#dataprocessing)
     - [Memory Reduction Script](#memoryreduction)
