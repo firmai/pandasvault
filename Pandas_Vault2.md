@@ -256,21 +256,8 @@ df4 = pd.util.testing.makeMixedDataFrame(); df4.head() # contains mixed values
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -318,7 +305,7 @@ df4 = pd.util.testing.makeMixedDataFrame(); df4.head() # contains mixed values
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -357,21 +344,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -409,7 +383,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -430,21 +404,8 @@ pd.back(df,2)
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -470,7 +431,7 @@ pd.back(df,2)
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -493,21 +454,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -545,7 +493,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -558,21 +506,8 @@ train = df[~df.isin(test)].dropna(); train
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -602,7 +537,7 @@ train = df[~df.isin(test)].dropna(); train
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -648,21 +583,8 @@ df["category"] = np.where( df["target"]>1, "1",  "0"); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -704,7 +626,7 @@ df["category"] = np.where( df["target"]>1, "1",  "0"); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -864,21 +786,8 @@ df["cats"] = ["bad","good","excellent"]; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -920,7 +829,7 @@ df["cats"] = ["bad","good","excellent"]; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -949,21 +858,8 @@ df[df["cats"] > "bad"]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -996,7 +892,7 @@ df[df["cats"] > "bad"]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1016,21 +912,8 @@ df.columns = ["a_l", "b_l", "c_r","d_r","target"]  ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1068,7 +951,7 @@ df.columns = ["a_l", "b_l", "c_r","d_r","target"]  ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1080,21 +963,8 @@ df_out = df.filter(regex="_l",axis=1) ; df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1120,7 +990,7 @@ df_out = df.filter(regex="_l",axis=1) ; df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1141,21 +1011,8 @@ df["groupie"] = ["falcon","hawk","hawk","eagle","falcon","hawk"]; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1224,7 +1081,7 @@ df["groupie"] = ["falcon","hawk","hawk","eagle","falcon","hawk"]; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1275,21 +1132,8 @@ df[cr1 & cr2 & cr3 & cr4]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1311,7 +1155,7 @@ df[cr1 & cr2 & cr3 & cr4]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1333,21 +1177,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1385,7 +1216,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1446,21 +1277,8 @@ df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1498,7 +1316,7 @@ df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1521,21 +1339,8 @@ df["second_d"] = [4,1,9] ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1581,7 +1386,7 @@ df["second_d"] = [4,1,9] ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1617,21 +1422,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1669,7 +1461,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1690,21 +1482,8 @@ df_out = ListShuff(["target","c","d"],df); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1742,7 +1521,7 @@ df_out = ListShuff(["target","c","d"],df); df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1761,21 +1540,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1813,7 +1579,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1876,21 +1642,8 @@ df[df>df.mean()]  = None ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1928,7 +1681,7 @@ df[df>df.mean()]  = None ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -1952,21 +1705,8 @@ df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2003,7 +1743,7 @@ df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2028,21 +1768,8 @@ df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2079,7 +1806,7 @@ df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2114,21 +1841,8 @@ df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2190,7 +1904,7 @@ df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2210,21 +1924,8 @@ df["string_feature"] = ["1xZoo", "Safe7x", "bat4"]; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2266,7 +1967,7 @@ df["string_feature"] = ["1xZoo", "Safe7x", "bat4"]; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2280,21 +1981,8 @@ df_out = df[~df.string_feature.str.contains('|'.join(substring))]; df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2327,7 +2015,7 @@ df_out = df[~df.string_feature.str.contains('|'.join(substring))]; df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2360,21 +2048,8 @@ df["g"] = [[str(a)+lista for a in range(4)] for lista in ["a","b","c"]]; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2416,7 +2091,7 @@ df["g"] = [[str(a)+lista for a in range(4)] for lista in ["a","b","c"]]; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2428,21 +2103,8 @@ df_out = df.explode("g"); df_out.iloc[:5,:]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2502,7 +2164,7 @@ df_out = df.explode("g"); df_out.iloc[:5,:]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2527,21 +2189,8 @@ df_out['g'] = df_out.groupby(df_out.index)['g'].agg(list); df_out.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2601,7 +2250,7 @@ df_out['g'] = df_out.groupby(df_out.index)['g'].agg(list); df_out.head()
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2629,21 +2278,8 @@ df["g"] = [",".join([str(a)+lista for a in range(4)]) for lista in ["a","b","c"]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2685,7 +2321,7 @@ df["g"] = [",".join([str(a)+lista for a in range(4)]) for lista in ["a","b","c"]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2697,21 +2333,8 @@ df_out = df.assign(g = df["g"].str.split(",")).explode("g"); df_out.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2771,7 +2394,7 @@ df_out = df.assign(g = df["g"].str.split(",")).explode("g"); df_out.head()
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2812,21 +2435,8 @@ df["gr"] = [1, 1 , 0] ;df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -2868,7 +2478,7 @@ df["gr"] = [1, 1 , 0] ;df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2914,7 +2524,7 @@ df_out = df.groupby('gr').agg([np.sum, np.mean, np.std]); df_out.iloc[:,:8]
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<table   class="dataframe">
   <thead>
     <tr>
       <th></th>
@@ -2970,7 +2580,7 @@ df_out = df.groupby('gr').agg([np.sum, np.mean, np.std]); df_out.iloc[:,:8]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -2992,21 +2602,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3044,7 +2641,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3095,21 +2692,8 @@ df[df>df.mean()]  = None ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3147,7 +2731,7 @@ df[df>df.mean()]  = None ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3181,21 +2765,8 @@ df["b"].iloc[2] = df["b"].iloc[1] ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3233,7 +2804,7 @@ df["b"].iloc[2] = df["b"].iloc[1] ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3247,21 +2818,8 @@ df_out = df[df.duplicated(['a', 'b'], keep=False)] ; df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3291,7 +2849,7 @@ df_out = df[df.duplicated(['a', 'b'], keep=False)] ; df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3310,21 +2868,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3362,7 +2907,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3400,21 +2945,8 @@ display_skewness(df)
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3456,7 +2988,7 @@ display_skewness(df)
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3500,21 +3032,8 @@ df["cat"] = ["bat","bat","rat","mat","mat","mat","mat","mat","mat"]; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3610,7 +3129,7 @@ df["cat"] = ["bat","bat","rat","mat","mat","mat","mat","mat","mat"]; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3638,21 +3157,8 @@ df_out = replace_small_cat(df,["cat"]); df_out.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3712,7 +3218,7 @@ df_out = replace_small_cat(df,["cat"]); df_out.head()
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3767,21 +3273,8 @@ df_out = df.drop(qconstant_col, axis=1) ; df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3815,7 +3308,7 @@ df_out = df.drop(qconstant_col, axis=1) ; df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3840,21 +3333,8 @@ df[df>df.mean()]  = None ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3892,7 +3372,7 @@ df[df>df.mean()]  = None ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3923,21 +3403,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -3975,7 +3442,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -3988,21 +3455,8 @@ df.loc[(df['a'] >1 ) & (df['c'] <0), ['target']] = np.nan ;df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4040,7 +3494,7 @@ df.loc[(df['a'] >1 ) & (df['c'] <0), ['target']] = np.nan ;df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4062,21 +3516,8 @@ df["a"] = "TI4560L" + df["a"].astype(str) ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4114,7 +3555,7 @@ df["a"] = "TI4560L" + df["a"].astype(str) ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4126,21 +3567,8 @@ df_out = df.replace('[^0-9]+', '', regex=True); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4178,7 +3606,7 @@ df_out = df.replace('[^0-9]+', '', regex=True); df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4198,21 +3626,8 @@ df= df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4250,7 +3665,7 @@ df= df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4299,21 +3714,8 @@ df_out_test = scaler(df_test,scaler=scl,train=False, target="target",cols_ignore
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4351,7 +3753,7 @@ df_out_test = scaler(df_test,scaler=scl,train=False, target="target",cols_ignore
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4405,21 +3807,8 @@ df_out = autodummy(df, unique=3); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4465,7 +3854,7 @@ df_out = autodummy(df, unique=3); df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4485,21 +3874,8 @@ df[df>df.mean()]  = None ; df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4537,7 +3913,7 @@ df[df>df.mean()]  = None ; df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4569,21 +3945,8 @@ df_out = binarise_empty(df, frac=0.6); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4637,7 +4000,7 @@ df_out = binarise_empty(df, frac=0.6); df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4657,21 +4020,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4709,7 +4059,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4732,21 +4082,8 @@ df_out = polynomials(df, ["a","b"]) ; df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4800,7 +4137,7 @@ df_out = polynomials(df, ["a","b"]) ; df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4820,21 +4157,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4872,7 +4196,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4904,21 +4228,8 @@ df_out = transformations(df,["a","b"]); df_out.iloc[:,:8]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -4968,7 +4279,7 @@ df_out = transformations(df,["a","b"]); df_out.iloc[:,:8]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -4993,21 +4304,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5045,7 +4343,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5076,21 +4374,8 @@ df_out = pd.concat((df,pd.DataFrame(gen_feats, columns=["gen_"+str(a) for a in r
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5140,7 +4425,7 @@ df_out = pd.concat((df,pd.DataFrame(gen_feats, columns=["gen_"+str(a) for a in r
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5161,21 +4446,8 @@ df =df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5213,7 +4485,7 @@ df =df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5243,21 +4515,8 @@ df_out = pca_feature(df,variance_or_components=0.80,drop_cols=["target","a"]); d
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5291,7 +4550,7 @@ df_out = pca_feature(df,variance_or_components=0.80,drop_cols=["target","a"]); d
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5312,21 +4571,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5364,7 +4610,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5388,21 +4634,8 @@ df_out = multiple_lags(df, start=1, end=2,columns=["a","target"]); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5456,7 +4689,7 @@ df_out = multiple_lags(df, start=1, end=2,columns=["a","target"]); df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5475,21 +4708,8 @@ df = df_test.copy(); df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5527,7 +4747,7 @@ df = df_test.copy(); df
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5555,21 +4775,8 @@ df_out = multiple_rolling(df, columns=["a"]); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5623,7 +4830,7 @@ df_out = multiple_rolling(df, columns=["a"]); df_out
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5644,21 +4851,8 @@ df["date_fake"] = pd.date_range(start="2019-01-03", end="2019-01-06", periods=le
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5700,7 +4894,7 @@ df["date_fake"] = pd.date_range(start="2019-01-03", end="2019-01-06", periods=le
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5724,21 +4918,8 @@ df_out = data_features(df, date="date_fake"); df_out.iloc[:,:8]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5788,7 +4969,7 @@ df_out = data_features(df, date="date_fake"); df_out.iloc[:,:8]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5827,21 +5008,8 @@ df['distance_central'] = df.apply(haversine_distance,axis=1); df.iloc[:,4:]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5875,7 +5043,7 @@ df['distance_central'] = df.apply(haversine_distance,axis=1); df.iloc[:,4:]
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5899,21 +5067,8 @@ df["addr"] = pd.Series([
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -5955,7 +5110,7 @@ df["addr"] = pd.Series([
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -5969,21 +5124,8 @@ df.addr.str.replace('.', '').str.extract(regex)
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -6013,7 +5155,7 @@ df.addr.str.replace('.', '').str.extract(regex)
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
 
@@ -6194,21 +5336,8 @@ met = classification_metrics(y_test, y_predict, y_prob); met
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<table   class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -6294,6 +5423,6 @@ met = classification_metrics(y_test, y_predict, y_prob); met
     </tr>
   </tbody>
 </table>
-</div>
+ 
 
 
