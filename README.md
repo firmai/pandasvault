@@ -1,5 +1,5 @@
 
-# Advanced Pandas Vault
+# Advanced Pandas Functions
 
 The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been inlcuded in this package. For some of the code we have produced packaged functions, look for (func). 
 
