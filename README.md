@@ -1,7 +1,7 @@
 
 # Advanced Pandas Functions
 
-The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been inlcuded in this package. For some of the code we have produced packaged functions, look for (func). 
+The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been developed and included in this package. If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticism is appreciated.  
 
 - [Data Processing](#dataprocessing)
     - [Memory Reduction Script](#memoryreduction)
