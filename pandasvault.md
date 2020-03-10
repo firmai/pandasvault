@@ -161,8 +161,6 @@ df_test = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd']) \
 ---
 
 
-<br/>
-
 <a name="configure-pandas"></a>
 
 **>>> Configure Pandas (func)**
@@ -2290,10 +2288,6 @@ df_out = df[~df.string_feature.str.contains('|'.join(substring))]; df_out
 
 
 
----
-
-
-
 
 ```python
 df = df_test.head()
@@ -2666,9 +2660,6 @@ df_out = df.assign(g = df["g"].str.split(",")).explode("g"); df_out.head()
 
 
 
-<br/>
-
-
 <a name="groupby-functionality"></a>
 
 **>>> Groupby Functionality**
@@ -2755,25 +2746,6 @@ df_out = df.groupby('gr').agg([np.sum, np.mean, np.std]); df_out.iloc[:,:8]
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
 <table  class="dataframe">
   <thead>
     <tr>
@@ -3359,8 +3331,6 @@ display_skewness(df)
 
 ---
 
-
-<br/>
 
 <a name="remove-correlated-pairs"></a>
 
@@ -4856,7 +4826,6 @@ df_out = pv.impute_outlier(data=df,col='a', outlier_index=index,strategy='mean')
 
 ---
 
-<br/>
 
 
 <a name="automate-dummy-encodings"></a>
@@ -4892,12 +4861,6 @@ def auto_dummy(df, unique=15):
 
 df_out = pv.auto_dummy(df, unique=3); df_out
 ```
-
-    e
-
-
-
-
 
  
 <table  class="dataframe">
@@ -6541,8 +6504,6 @@ df[col_name] = df[col_name].str.lstrip()
 
 ---
 
-
-<br/>
 
 
 <a name="classification-metrics"></a>
