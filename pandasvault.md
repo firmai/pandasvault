@@ -162,7 +162,9 @@ df_test = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd']) \
 
 
 <br/>
+
 <a name="configure-pandas"></a>
+
 **>>> Configure Pandas (func)**
 
 
@@ -202,6 +204,7 @@ if __name__ == '__main__':
 ```
 
 <br/>
+
 <a name="data-frame-formatting"></a>
 
 **>>> Data Frame Formatting**
@@ -316,6 +319,7 @@ df4 = pd.util.testing.makeMixedDataFrame(); df4.head() # contains mixed values
  
 
 
+<br/>
 
 <a name="lower-case-columns"></a>
 
@@ -386,6 +390,7 @@ df.columns = map(str.lower, df.columns); df
  
 
 
+<br/>
 
 <a name="front-and-back-columns"></a>
 
@@ -497,6 +502,7 @@ pd.back(df,2)
  
 
 
+<br/>
 
 <a name="fast-data-frame-split"></a>
 
@@ -605,6 +611,7 @@ train = df[~df.isin(test)].dropna(); train
  
 
 
+<br/>
 
 <a name="create-features-and-labels-list"></a>
 
@@ -630,6 +637,7 @@ print('X =', X)
     y = target
     X = ['a', 'b', 'c']
 
+<br/>
 
 <a name="short-basic-commands"></a>
 
@@ -900,6 +908,7 @@ rows = df.isna().mean(axis=1) ; df.head()
  
 
 
+<br/>
 
 <a name="read-commands"></a>
 
@@ -1056,6 +1065,7 @@ df_out.head()
 </table>
  
 
+<br/>
 
 
 <a name="create-ordered-categories"></a>
@@ -1184,6 +1194,7 @@ df[df["cats"] > "bad"]
  
 
 
+<br/>
 
 <a name="select-columns-based-on-regex"></a>
 
@@ -1284,6 +1295,7 @@ df_out = df.filter(regex="_l",axis=1) ; df_out
  
 
 
+<br/>
 
 <a name="accessing-group-of-groupby-object"></a>
 
@@ -1395,6 +1407,7 @@ hawk = gbdf.get_group("hawk").mean(); hawk
     dtype: float64
 
 
+<br/>
 
 <a name="multiple-external-selection-criteria"></a>
 
@@ -1453,6 +1466,7 @@ df[cr1 & cr2 & cr3 & cr4]
  
 
 
+<br/>
 
 <a name="memory-reduction-script"></a>
 
@@ -1611,6 +1625,7 @@ df_out = pv.reduce_mem_usage(df); df_out
  
 
 
+<br/>
 
 <a name="verify-primary-key"></a>
 
@@ -1700,6 +1715,7 @@ verify_primary_key(df, ["first_d","second_d"])
     True
 
 
+<br/>
 
 <a name="shift-columns-to-front"></a>
 
@@ -1820,6 +1836,7 @@ df_out = pv.list_shuff(["target","c","d"],df); df_out
  
 
 
+<br/>
 
 <a name="multiple-column-assignment"></a>
 
@@ -1920,6 +1937,7 @@ df_out = (df.assign(stringed = df["a"].astype(str),
             </tr>
     </tbody></table>
 
+<br/>
 
 
 <a name="method-chaning-event"></a>
@@ -2045,6 +2063,7 @@ df_out
 </table>
  
 
+<br/>
 
 
 <a name="load-multiple-files"></a>
@@ -2145,6 +2164,7 @@ df_out
 </table>
  
 
+<br/>
 
 
 <a name="drop-rows-and-column-substring"></a>
@@ -2259,6 +2279,7 @@ df_out = df[~df.string_feature.str.contains('|'.join(substring))]; df_out
  
 
 
+<br/>
 
 <a name="explode-a-column"></a>
 
@@ -2402,6 +2423,7 @@ df_out = df.explode("g"); df_out.iloc[:5,:]
  
 
 
+<br/>
 
 <a name="nest-list-back-into-column"></a>
 
@@ -2490,6 +2512,7 @@ df_out['g'] = df_out.groupby(df_out.index)['g'].agg(list); df_out.head()
  
 
 
+<br/>
 
 <a name="split-cells-with-list"></a>
 
@@ -2627,6 +2650,7 @@ df_out = df.assign(g = df["g"].str.split(",")).explode("g"); df_out.head()
 </table>
  
 
+<br/>
 
 
 <a name="table-exploration"></a>
@@ -2643,6 +2667,7 @@ df_out = df.assign(g = df["g"].str.split(",")).explode("g"); df_out.head()
 
 
 
+<br/>
 
 
 <a name="groupby-functionality"></a>
@@ -2809,6 +2834,7 @@ df_out = df.groupby('gr').agg([np.sum, np.mean, np.std]); df_out.iloc[:,:8]
  
 
 
+<br/>
 
 <a name="cross-correlation-series-without-duplicates"></a>
 
@@ -2901,6 +2927,7 @@ pv.corr_list(df)
     dtype: float64
 
 
+<br/>
 
 <a name="missing-data-report"></a>
 
@@ -2980,24 +3007,6 @@ pv.df_out = missing_data(df); df_out
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
 <table  class="dataframe">
   <thead>
     <tr>
@@ -3087,6 +3096,7 @@ pv.df_out = missing_data(df); df_out
  
 
 
+<br/>
 
 <a name="duplicated-rows-report"></a>
 
@@ -3195,6 +3205,7 @@ df_out = df[df.duplicated(['a', 'b'], keep=False)] ; df_out
  
 
 
+<br/>
 
 <a name="skewness"></a>
 
@@ -3337,6 +3348,7 @@ display_skewness(df)
 
 
 
+
 <a name="feature-processing"></a>
 
 ### **Feature Processing**
@@ -3349,6 +3361,7 @@ display_skewness(df)
 ---
 
 
+<br/>
 
 <a name="remove-correlated-pairs"></a>
 
@@ -3464,6 +3477,7 @@ df_out = pv.drop_corr(df, thresh=0.1,keep_cols=["target"]); df_out
  
 
 
+<br/>
 
 <a name="replace-infrequently-occuring-categories"></a>
 
@@ -3674,6 +3688,7 @@ df_out = pv.replace_small_cat(df,["cat"]); df_out.head()
  
 
 
+<br/>
 
 <a name="quasi-constant-feature-detection"></a>
 
@@ -3771,6 +3786,7 @@ df_out = df.drop(qconstant_col, axis=1) ; df_out
 ```python
 ### I will take care of outliers separately
 ```
+<br/>
 
 <a name="filling-missing-values-separately"></a>
 
@@ -3890,6 +3906,7 @@ df = df.fillna(dict_fill) ;df
  
 
 
+<br/>
 
 <a name="conditioned-column-value-replacement"></a>
 
@@ -4001,6 +4018,7 @@ df.loc[(df['a'] >1 ) & (df['c'] <0), ['target']] = np.nan ;df
 </table>
  
 
+<br/>
 
 
 <a name="remove-non-numeric-values-in-data-frame"></a>
@@ -4115,6 +4133,7 @@ df_out = df.replace('[^0-9]+', '', regex=True); df_out
 </table>
  
 
+<br/>
 
 
 <a name="feature-scaling-normalisation-standardisation"></a>
@@ -4265,6 +4284,7 @@ df_out_test = pv.scaler(df_test,scaler=scl,train=False, target="target",cols_ign
  
 
 
+<br/>
 
 <a name="impute-null-with-tail-distribution"></a>
 
@@ -4393,6 +4413,7 @@ df_out = pv.impute_null_with_tail(df,cols=df.columns); df_out
  
 
 
+<br/>
 
 <a name="detect-outliers"></a>
 
@@ -4500,6 +4521,7 @@ print('Upper bound:',para[0],'\nLower bound:',para[1])
     Upper bound: 1.5712030633954956 
     Lower bound: 0.2658967957893529
 
+<br/>
 
 <a name="windsorize-outliers"></a>
 
@@ -4633,6 +4655,7 @@ df_out = pv.windsorization(data=df,col='a',para=para,strategy='both'); df_out
  
 
 
+<br/>
 
 <a name="drop-outiers"></a>
 
@@ -4741,6 +4764,7 @@ df_out = df[~index] ; df_out
  
 
 
+<br/>
 
 <a name="impute-outiers (func)"></a>
 
@@ -4833,6 +4857,7 @@ df_out = pv.impute_outlier(data=df,col='a', outlier_index=index,strategy='mean')
 
 ---
 
+<br/>
 
 
 <a name="automate-dummy-encodings"></a>
@@ -4925,6 +4950,7 @@ df_out = pv.auto_dummy(df, unique=3); df_out
  
 
 
+<br/>
 
 <a name="binarise-empty-columns"></a>
 
@@ -5073,6 +5099,7 @@ df_out = pv.binarise_empty(df, frac=0.6); df_out
  
 
 
+<br/>
 
 <a name="polynomials"></a>
 
@@ -5212,6 +5239,7 @@ df_out = pv.polynomials(df, ["a","b"]) ; df_out
  
 
 
+<br/>
 
 <a name="transformations"></a>
 
@@ -5356,6 +5384,7 @@ df_out = pv.transformations(df,["a","b"]); df_out.iloc[:,:8]
  
 
 
+<br/>
 
 <a name="genetic-programming"></a>
 
@@ -5515,6 +5544,7 @@ df_out = pd.concat((df,pd.DataFrame(gen_feats, columns=["gen_"+str(a) for a in r
  
 
 
+<br/>
 
 <a name="principal-component"></a>
 
@@ -5642,6 +5672,7 @@ df_out = pv.pca_feature(df,variance_or_components=0.80,drop_cols=["target","a"])
  
 
 
+<br/>
 
 <a name="multiple-lags"></a>
 
@@ -5783,6 +5814,7 @@ df_out = pv.multiple_lags(df, start=1, end=2,columns=["a","target"]); df_out
  
 
 
+<br/>
 
 <a name="multiple-rolling"></a>
 
@@ -5926,6 +5958,7 @@ df_out = pv.multiple_rolling(df, columns=["a"]); df_out
  
 
 
+<br/>
 
 <a name="data-features"></a>
 
@@ -6067,6 +6100,7 @@ df_out = date_features(df, date="date_fake"); df_out.iloc[:,:8]
  
 
 
+<br/>
 
 <a name="havervsine-distance"></a>
 
@@ -6144,6 +6178,7 @@ df['distance_central'] = df.apply(pv.haversine_distance,axis=1); df.iloc[:,4:]
  
 
 
+<br/>
 
 <a name="parse-address"></a>
 
@@ -6258,6 +6293,7 @@ df.addr.str.replace('.', '').str.extract(regex)
  
 
 
+<br/>
 
 <a name="processing-strings-in-pandas"></a>
 
@@ -6388,6 +6424,7 @@ s.str.rsplit("/", n=1, expand=True)
 </table>
  
 
+<br/>
 
 
 <a name="filtering-strings-in-pandas"></a>
@@ -6506,6 +6543,7 @@ df[col_name] = df[col_name].str.lstrip()
 ---
 
 
+<br/>
 
 
 <a name="classification-metrics"></a>
