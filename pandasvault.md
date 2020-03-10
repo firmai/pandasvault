@@ -3,30 +3,11 @@
 
 [`Github PandasVault Link`](https://github.com/firmai/pandasvault), [`LinkedIn`](https://www.linkedin.com/company/firmai)
 
+You have the option to view this Readme or [Colab](https://colab.research.google.com/drive/1TRKHPGfQnE2yw6_VPBJZ3nZ8lIPQYiuP) Notebook. 
 
 ```python
 !pip install pandasvault
 ```
-
-    Collecting pandasvault
-      Downloading https://files.pythonhosted.org/packages/66/70/70f2679fd15f13cc418bd8b5bc69c68a344315d75a6a501a6606fa5ba1b7/pandasvault-0.0.3.tar.gz
-    Requirement already satisfied: pandas in /usr/local/lib/python3.6/dist-packages (from pandasvault) (0.25.3)
-    Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from pandasvault) (1.17.5)
-    Requirement already satisfied: sklearn in /usr/local/lib/python3.6/dist-packages (from pandasvault) (0.0)
-    Requirement already satisfied: python-dateutil>=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas->pandasvault) (2.6.1)
-    Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas->pandasvault) (2018.9)
-    Requirement already satisfied: scikit-learn in /usr/local/lib/python3.6/dist-packages (from sklearn->pandasvault) (0.22.1)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.6/dist-packages (from python-dateutil>=2.6.1->pandas->pandasvault) (1.12.0)
-    Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.6/dist-packages (from scikit-learn->sklearn->pandasvault) (0.14.1)
-    Requirement already satisfied: scipy>=0.17.0 in /usr/local/lib/python3.6/dist-packages (from scikit-learn->sklearn->pandasvault) (1.4.1)
-    Building wheels for collected packages: pandasvault
-      Building wheel for pandasvault (setup.py) ... [?25l[?25hdone
-      Created wheel for pandasvault: filename=pandasvault-0.0.3-cp36-none-any.whl size=6493 sha256=3f67660b7407963b897e4e0694704c831f64d4c205bd112289e563c417f248f4
-      Stored in directory: /root/.cache/pip/wheels/ae/6a/ee/1f31529eeba2dda5cffc612d17d4395ceadd1d8c51bec99688
-    Successfully built pandasvault
-    Installing collected packages: pandasvault
-    Successfully installed pandasvault-0.0.3
-
 
 ### List of Functions
 
@@ -156,18 +137,6 @@ scores = pv.classification_scores(y_test, y_predict, y_prob)
 !pip install pandasvault
 ```
 
-    Requirement already satisfied: pandasvault in /usr/local/lib/python3.6/dist-packages (0.0.3)
-    Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from pandasvault) (1.17.5)
-    Requirement already satisfied: pandas in /usr/local/lib/python3.6/dist-packages (from pandasvault) (0.25.3)
-    Requirement already satisfied: sklearn in /usr/local/lib/python3.6/dist-packages (from pandasvault) (0.0)
-    Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas->pandasvault) (2018.9)
-    Requirement already satisfied: python-dateutil>=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas->pandasvault) (2.6.1)
-    Requirement already satisfied: scikit-learn in /usr/local/lib/python3.6/dist-packages (from sklearn->pandasvault) (0.22.1)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.6/dist-packages (from python-dateutil>=2.6.1->pandas->pandasvault) (1.12.0)
-    Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.6/dist-packages (from scikit-learn->sklearn->pandasvault) (0.14.1)
-    Requirement already satisfied: scipy>=0.17.0 in /usr/local/lib/python3.6/dist-packages (from scikit-learn->sklearn->pandasvault) (1.4.1)
-
-
 
 ```python
 import pandas as pd
@@ -192,7 +161,7 @@ df_test = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd']) \
 ---
 
 
-
+<br/>
 <a name="configure-pandas"></a>
 **>>> Configure Pandas (func)**
 
@@ -232,6 +201,7 @@ if __name__ == '__main__':
 
 ```
 
+<br/>
 <a name="data-frame-formatting"></a>
 
 **>>> Data Frame Formatting**
@@ -262,66 +232,10 @@ df_out = (
 
 ```
 
+```See Colab for Output```
 
 
-
-<style  type="text/css" >
-    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col0 {
-            : ;
-            background-color:  green;
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col4 {
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col5 {
-            width:  10em;
-             height:  80%;
-            background:  linear-gradient(90deg, transparent 50.0%, lightblue 50.0%, lightblue 65.0%, transparent 65.0%);
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col4 {
-            background-color:  #f7fbff;
-            color:  #000000;
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col5 {
-            width:  10em;
-             height:  80%;
-            background:  linear-gradient(90deg, transparent 50.0%, lightblue 50.0%, lightblue 100.0%, transparent 100.0%);
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col0 {
-            background-color:  red;
-            : ;
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col4 {
-            background-color:  #1f6eb3;
-            color:  #f1f1f1;
-        }    #T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col5 {
-            width:  10em;
-             height:  80%;
-            background:  linear-gradient(90deg, transparent 50.0%, lightblue 50.0%, lightblue 55.0%, transparent 55.0%);
-        }</style><table id="T_3b06850c_627f_11ea_a8db_0242ac1c0002" ><caption>DF with different stylings</caption><thead>    <tr>        <th class="col_heading level0 col0" >a</th>        <th class="col_heading level0 col1" >b</th>        <th class="col_heading level0 col2" >c</th>        <th class="col_heading level0 col3" >d</th>        <th class="col_heading level0 col4" >target</th>        <th class="col_heading level0 col5" >number</th>    </tr></thead><tbody>
-                <tr>
-                                <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col0" class="data row0 col0" >$1.62</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col1" class="data row0 col1" >-0.6118</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col2" class="data row0 col2" >-0.5282</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col3" class="data row0 col3" >-1.073</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col4" class="data row0 col4" >$1.12270</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row0_col5" class="data row0 col5" >3</td>
-            </tr>
-            <tr>
-                                <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col0" class="data row1 col0" >$0.87</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col1" class="data row1 col1" >-2.302</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col2" class="data row1 col2" >1.745</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col3" class="data row1 col3" >-0.7612</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col4" class="data row1 col4" >$-5.99941</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row1_col5" class="data row1 col5" >10</td>
-            </tr>
-            <tr>
-                                <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col0" class="data row2 col0" >$0.32</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col1" class="data row2 col1" >-0.2494</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col2" class="data row2 col2" >1.462</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col3" class="data row2 col3" >-2.06</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col4" class="data row2 col4" >$-0.59103</td>
-                        <td id="T_3b06850c_627f_11ea_a8db_0242ac1c0002row2_col5" class="data row2 col5" >1</td>
-            </tr>
-    </tbody></table>
-
-
-
+<br/>
 <a name="data-frame-formatting"></a>
 
 **>>> Data Frames For Testing**
