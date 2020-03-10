@@ -5,7 +5,7 @@ The only Pandas utility package you would ever need. It has no exotic external d
 ```pip install pandasvault```
 
 ```python
-import pvance as pv
+import pandasvault as pv
 
 pv.make_memory()
 ```
