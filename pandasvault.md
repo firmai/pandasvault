@@ -1911,8 +1911,7 @@ df_out = (df.assign(stringed = df["a"].astype(str),
 
 
 
-<style  type="text/css" >
-</style><table id="T_6d6167c4_627f_11ea_a8db_0242ac1c0002" ><caption>Average consumption</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >a</th>        <th class="col_heading level0 col1" >b</th>        <th class="col_heading level0 col2" >c</th>        <th class="col_heading level0 col3" >d</th>        <th class="col_heading level0 col4" >target</th>        <th class="col_heading level0 col5" >stringed</th>        <th class="col_heading level0 col6" >ounces</th>        <th class="col_heading level0 col7" >galons</th>    </tr></thead><tbody>
+<table id="T_6d6167c4_627f_11ea_a8db_0242ac1c0002" ><caption>Average consumption</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >a</th>        <th class="col_heading level0 col1" >b</th>        <th class="col_heading level0 col2" >c</th>        <th class="col_heading level0 col3" >d</th>        <th class="col_heading level0 col4" >target</th>        <th class="col_heading level0 col5" >stringed</th>        <th class="col_heading level0 col6" >ounces</th>        <th class="col_heading level0 col7" >galons</th>    </tr></thead><tbody>
                 <tr>
                         <th id="T_6d6167c4_627f_11ea_a8db_0242ac1c0002level0_row0" class="row_heading level0 row0" >0</th>
                         <td id="T_6d6167c4_627f_11ea_a8db_0242ac1c0002row0_col0" class="data row0 col0" >1.624</td>
