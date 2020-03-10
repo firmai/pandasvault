@@ -1,7 +1,7 @@
 
 # **PandasVault** ⁠— Advanced Pandas Functions and Code Snippets
 
-The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been developed and included in this package.
+The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been developed and included in this package. The package has more than 20 wraped functions and 100 snippets. 
 
 [`Github PandasVault Link`](https://github.com/firmai/pandasvault), [`LinkedIn`](https://www.linkedin.com/company/firmai)
 
