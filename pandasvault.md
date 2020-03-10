@@ -11,7 +11,7 @@ You have the option to view this [Readme](https://github.com/firmai/pandasvault/
 !pip install pandasvault
 ```
 
-If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticisms are appreciated. I would love to hear about any additional function ideas. If you have a function to constribute please open an issues tab or email me at d.snow(at)nyu.edu. 
+If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticisms are appreciated. I would love to hear about any additional function ideas. If you have a **function to contribute** please open an issues tab or email me at d.snow(at)nyu.edu. 
 
 ### List of Functions
 
