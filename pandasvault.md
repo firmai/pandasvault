@@ -3,7 +3,7 @@
 
 [`Github PandasVault Link`](https://github.com/firmai/pandasvault), [`LinkedIn`](https://www.linkedin.com/company/firmai)
 
-You have the option to view this Readme or [Colab](https://colab.research.google.com/drive/1TRKHPGfQnE2yw6_VPBJZ3nZ8lIPQYiuP) Notebook. 
+You have the option to view this [Readme](https://github.com/firmai/pandasvault/blob/master/pandasvault.md) or [Colab](https://colab.research.google.com/drive/1TRKHPGfQnE2yw6_VPBJZ3nZ8lIPQYiuP) Notebook. 
 
 ```python
 !pip install pandasvault
