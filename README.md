@@ -2,7 +2,7 @@
 
 The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been developed and included in this package. If you can identify performance improvements, or <mark>improvements</mark> in code length and styling, please open a pull request. This package is new, all help and criticism is appreciated.  
 
-```pip install pvance```
+```pip install pandasvault```
 
 ```python
 import pvance as pv
