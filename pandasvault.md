@@ -1,6 +1,8 @@
 
 # **PandasVault** ⁠— Advanced Pandas Functions and Code Snippets
 
+The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been developed and included in this package.
+
 [`Github PandasVault Link`](https://github.com/firmai/pandasvault), [`LinkedIn`](https://www.linkedin.com/company/firmai)
 
 You have the option to view this [Readme](https://github.com/firmai/pandasvault/blob/master/pandasvault.md) or [Colab](https://colab.research.google.com/drive/1TRKHPGfQnE2yw6_VPBJZ3nZ8lIPQYiuP) Notebook. 
@@ -9,7 +11,7 @@ You have the option to view this [Readme](https://github.com/firmai/pandasvault/
 !pip install pandasvault
 ```
 
-The only Pandas utility package you would ever need. It has no exotic external dependencies. All functions have been compared and tested with alternatives, only the fastest equivalent functions have been developed and included in this package. If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticism are appreciated.
+If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticism are appreciated.
 
 ### List of Functions
 
