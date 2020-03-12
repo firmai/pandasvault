@@ -13,47 +13,6 @@ pip install pandasvault
 
 If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticisms are appreciated. I would love to hear about any additional function ideas. If you have a **function to contribute** please open an issues tab or email me at d.snow(at)nyu.edu. 
 
-### List of Functions
-
-```python
-import pandas as pd
-import numpy as np
-import pandasvault as pv
-
-"""TABLE PROCESSING"""
-df = pv.list_shuff(["target","c","d"],df)
-df = pv.reduce_mem_usage(df)
-
-"""TABLE EXPLORATION"""
-df = pv.corr_list(df)
-df = pv.missing_data(df)
-
-"""FEATURE PROCESSING"""
-df = pv.drop_corr(df, thresh=0.1,keep_cols=["target"])
-df = pv.replace_small_cat(df,["cat"])
-qconstant_col = pv.constant_feature_detect(data=df,threshold=0.9)
-df_train, scl = pv.scaler(df,target="target",cols_ignore=["a"],type="MinMax")
-df_test = pv.scaler(df_test,scaler=scl,train=False, target="target",cols_ignore=["a"])
-df = pv.impute_null_with_tail(df,cols=df.columns)
-index,para = pv.outlier_detect(df,"a",threshold=0.5,method="IQR")
-df = pv.windsorization(data=df,col='a',para=para,strategy='both')
-df = pv.impute_outlier(data=df,col='a', outlier_index=index,strategy='mean')
-
-"""FEATURE EXTRACTION"""
-df = pv.auto_dummy(df, unique=3)
-df = pv.binarise_empty(df, frac=0.6)
-df = pv.polynomials(df, ["a","b"]) 
-df = pv.transformations(df,["a","b"])
-df = pv.pca_feature(df,variance_or_components=0.80,drop_cols=["target","a"])
-df = pv.multiple_lags(df, start=1, end=2,columns=["a","target"])
-df = pv.multiple_rolling(df, columns=["a"])
-df = pv.date_features(df, date="date_fake")
-df['distance_central'] = df.apply(pv.haversine_distance,axis=1)
-
-"""MODEL VALIDATION"""
-scores = pv.classification_scores(y_test, y_predict, y_prob)
-
-```
 
 
 ## List of Code
@@ -132,6 +91,49 @@ scores = pv.classification_scores(y_test, y_predict, y_prob)
 
 
 
+### List of Functions
+
+```python
+import pandas as pd
+import numpy as np
+import pandasvault as pv
+
+"""TABLE PROCESSING"""
+df = pv.list_shuff(["target","c","d"],df)
+df = pv.reduce_mem_usage(df)
+
+"""TABLE EXPLORATION"""
+df = pv.corr_list(df)
+df = pv.missing_data(df)
+
+"""FEATURE PROCESSING"""
+df = pv.drop_corr(df, thresh=0.1,keep_cols=["target"])
+df = pv.replace_small_cat(df,["cat"])
+qconstant_col = pv.constant_feature_detect(data=df,threshold=0.9)
+df_train, scl = pv.scaler(df,target="target",cols_ignore=["a"],type="MinMax")
+df_test = pv.scaler(df_test,scaler=scl,train=False, target="target",cols_ignore=["a"])
+df = pv.impute_null_with_tail(df,cols=df.columns)
+index,para = pv.outlier_detect(df,"a",threshold=0.5,method="IQR")
+df = pv.windsorization(data=df,col='a',para=para,strategy='both')
+df = pv.impute_outlier(data=df,col='a', outlier_index=index,strategy='mean')
+
+"""FEATURE EXTRACTION"""
+df = pv.auto_dummy(df, unique=3)
+df = pv.binarise_empty(df, frac=0.6)
+df = pv.polynomials(df, ["a","b"]) 
+df = pv.transformations(df,["a","b"])
+df = pv.pca_feature(df,variance_or_components=0.80,drop_cols=["target","a"])
+df = pv.multiple_lags(df, start=1, end=2,columns=["a","target"])
+df = pv.multiple_rolling(df, columns=["a"])
+df = pv.date_features(df, date="date_fake")
+df['distance_central'] = df.apply(pv.haversine_distance,axis=1)
+
+"""MODEL VALIDATION"""
+scores = pv.classification_scores(y_test, y_predict, y_prob)
+
+```
+
+--------------
 
 
 *If you are running the code <mark>for the first time load this</mark> test dataframe:*
