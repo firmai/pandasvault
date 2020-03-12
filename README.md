@@ -8,7 +8,7 @@ The only Pandas utility package you would ever need. It has no exotic external d
 You have the option to view this [Readme](https://github.com/firmai/pandasvault/blob/master/pandasvault.md) or run a [Colab](https://colab.research.google.com/drive/1TRKHPGfQnE2yw6_VPBJZ3nZ8lIPQYiuP) Notebook. 
 
 ```python
-!pip install pandasvault
+pip install pandasvault
 ```
 
 If you can identify performance improvements, or improvements in code length and styling, please open a pull request. This package is new, all help and criticisms are appreciated. I would love to hear about any additional function ideas. If you have a **function to contribute** please open an issues tab or email me at d.snow(at)nyu.edu. 
