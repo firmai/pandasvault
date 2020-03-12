@@ -134,7 +134,7 @@ scores = pv.classification_scores(y_test, y_predict, y_prob)
 ```
 
 
-## Documentation by Example
+## Functions and Snippets Applied
 --------------
 
 
