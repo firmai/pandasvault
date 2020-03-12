@@ -89,7 +89,7 @@ If you can identify performance improvements, or improvements in code length and
 
   -	[<font color="black">Classification Metrics</font>](#classification-metrics)
 
-
+--------------
 
 ### List of Functions
 
