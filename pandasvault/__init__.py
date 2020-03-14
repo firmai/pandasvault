@@ -8,6 +8,7 @@ from sklearn.metrics import log_loss, brier_score_loss, accuracy_score
 from math import sin, cos, sqrt, atan2, radians
 from warnings import warn
 
+
 ### TABLE PROCESSING
 #=============================================================================================
 
