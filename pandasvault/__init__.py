@@ -46,7 +46,7 @@ def reduce_mem_usage(df):
     for col in df.columns:
         col_type = df[col].dtype
         gc.collect()
-        if col_type != object and col_type != 'category':
+        if (col_type != object) and (str(col_type).lower() != 'category') and ('time' not in str(col_type).lower()):
             c_min = df[col].min()
             c_max = df[col].max()
             if str(col_type)[:3] == 'int':
