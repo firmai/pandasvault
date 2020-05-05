@@ -46,7 +46,7 @@ def reduce_mem_usage(df):
     for col in df.columns:
         col_type = df[col].dtype
         gc.collect()
-        if col_type != object:
+        if col_type != object and col_type != 'category':
             c_min = df[col].min()
             c_max = df[col].max()
             if str(col_type)[:3] == 'int':
@@ -66,7 +66,8 @@ def reduce_mem_usage(df):
                 else:
                     df[col] = df[col].astype(np.float64)
         else:
-            df[col] = df[col].astype('category')
+            if col_type == object:
+                df[col] = df[col].astype('category')
 
     end_mem = df.memory_usage().sum() / 1024**2
     print('Memory usage after optimization is: {:.2f} MB'.format(end_mem))
