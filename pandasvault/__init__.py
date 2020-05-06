@@ -51,20 +51,15 @@ def reduce_mem_usage(df):
             c_min = df[col].min()
             c_max = df[col].max()
             if str(col_type)[:3] == 'int':
-                if c_min > np.iinfo(np.int8).min and c_max < np.iinfo(np.int8).max:
-                    df[col] = df[col].astype(np.int8)
-                elif c_min > np.iinfo(np.int16).min and c_max < np.iinfo(np.int16).max:
-                    df[col] = df[col].astype(np.int16)
-                elif c_min > np.iinfo(np.int32).min and c_max < np.iinfo(np.int32).max:
-                    df[col] = df[col].astype(np.int32)
-                elif c_min > np.iinfo(np.int64).min and c_max < np.iinfo(np.int64).max:
-                    df[col] = df[col].astype(np.int64)  
+                for int_type in (np.int8, np.int16, np.int32, np.int64):
+                    if c_min > np.iinfo(int_type).min and c_max < np.iinfo(int_type).max:
+                        df[col] = df[col].astype(int_type)
             else:
-                if c_min > np.finfo(np.float16).min and c_max < np.finfo(np.float16).max:
-                    df[col] = df[col].astype(np.float16)
-                elif c_min > np.finfo(np.float32).min and c_max < np.finfo(np.float32).max:
-                    df[col] = df[col].astype(np.float32)
-                else:
+                for float_type in (np.float16, np.float32):
+                    if c_min > np.finfo(float_type).min and c_max < np.finfo(float_type).max:
+                        df[col] = df[col].astype(float_type)
+                        break
+                else:  # break is required with for/else
                     df[col] = df[col].astype(np.float64)
         else:
             if col_type == object:
