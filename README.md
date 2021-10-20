@@ -5,11 +5,6 @@ The only Pandas utility package you would ever need. It has no exotic external d
 
 ---------
 
-## Sov.ai Research Lab (Sponsorship)
-
-Animated Investment Management Research at [Sov.ai](https://sov.ai) — Sponsoring open source AI, Machine learning, and Data Science initiatives.
-
----------
 
 [`Github PandasVault Link`](https://github.com/firmai/pandasvault), [`LinkedIn`](https://www.linkedin.com/company/firmai)
 
