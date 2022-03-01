@@ -2983,7 +2983,7 @@ def missing_data(data):
     percent = (data.isnull().sum()/data.isnull().count()*100).sort_values(ascending = False)
     return pd.concat([total, percent], axis=1, keys=['Total', 'Percent'])
 
-pv.df_out = missing_data(df); df_out
+df_out = pv.missing_data(df); df_out
 ```
 
 
